@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-01-28T02:04:40Z" name="Default suite" finished-at="2019-01-28T02:05:26Z" duration-ms="45915">
+    <groups>
+    </groups>
+    <test started-at="2019-01-28T02:04:40Z" name="Default test" finished-at="2019-01-28T02:05:26Z" duration-ms="45915">
+      <class name="com.selenium.exercise.Tests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:04:40Z" name="setup" finished-at="2019-01-28T02:04:46Z" duration-ms="5272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginToTestApp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:04:46Z" name="loginToTestApp" data-provider="credentials" finished-at="2019-01-28T02:04:47Z" duration-ms="935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToTestApp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:04:47Z" name="teardown" finished-at="2019-01-28T02:04:47Z" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:04:47Z" name="setup" finished-at="2019-01-28T02:04:52Z" duration-ms="4631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginToTestAppNoCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:04:52Z" name="loginToTestAppNoCredentials" data-provider="invalidCredentials" finished-at="2019-01-28T02:04:53Z" duration-ms="1510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToTestAppNoCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:04:53Z" name="teardown" finished-at="2019-01-28T02:04:54Z" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:04:54Z" name="setup" finished-at="2019-01-28T02:04:59Z" duration-ms="4620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginToTestAppNoCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:04:59Z" name="loginToTestAppNoCredentials" data-provider="invalidCredentials" finished-at="2019-01-28T02:05:00Z" duration-ms="1335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser1@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToTestAppNoCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:00Z" name="teardown" finished-at="2019-01-28T02:05:01Z" duration-ms="665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:01Z" name="setup" finished-at="2019-01-28T02:05:06Z" duration-ms="4846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginToTestAppNoCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:06Z" name="loginToTestAppNoCredentials" data-provider="invalidCredentials" finished-at="2019-01-28T02:05:07Z" duration-ms="1197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToTestAppNoCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:07Z" name="teardown" finished-at="2019-01-28T02:05:07Z" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:07Z" name="setup" finished-at="2019-01-28T02:05:12Z" duration-ms="4842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginToTestAppNoCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:12Z" name="loginToTestAppNoCredentials" data-provider="invalidCredentials" finished-at="2019-01-28T02:05:13Z" duration-ms="902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToTestAppNoCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:13Z" name="teardown" finished-at="2019-01-28T02:05:14Z" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:14Z" name="setup" finished-at="2019-01-28T02:05:18Z" duration-ms="4687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginToTestAppNoCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:18Z" name="loginToTestAppNoCredentials" data-provider="invalidCredentials" finished-at="2019-01-28T02:05:19Z" duration-ms="973" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuse1r@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tesst1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToTestAppNoCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:19Z" name="teardown" finished-at="2019-01-28T02:05:20Z" duration-ms="599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:20Z" name="setup" finished-at="2019-01-28T02:05:24Z" duration-ms="4478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginToTestAppNoCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:24Z" name="loginToTestAppNoCredentials" data-provider="invalidCredentials" finished-at="2019-01-28T02:05:26Z" duration-ms="1166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToTestAppNoCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.selenium.exercise.Tests@424e1977]" started-at="2019-01-28T02:05:26Z" name="teardown" finished-at="2019-01-28T02:05:26Z" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.selenium.exercise.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

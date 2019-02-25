@@ -1,0 +1,231 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Interview</groupId>
+  <artifactId>Interview</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <properties>
+  		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <android.version>4.1.1.4</android.version>  						<!-- updated -->
+		<appium.version>6.1.0</appium.version>      						<!-- updated -->
+		<commons-cli.version>1.4</commons-cli.version>
+		<commons-codec.version>1.11</commons-codec.version>                 <!-- updated -->
+		<commons-logging.version>1.2</commons-logging.version>              <!-- updated -->
+        <com-google-guava.version>21.0</com-google-guava.version>
+        <google-api-client.version>1.23.0</google-api-client.version>       <!-- updated -->
+        <gson.version>2.8.4</gson.version>									<!-- updated -->
+	    <httpclient.version>4.5.5</httpclient.version>                      <!-- updated -->
+	    <httpcore.version>4.4.9</httpcore.version>					        <!-- updated -->
+        <java-jwt.version>3.3.0</java-jwt.version>                          <!-- updated -->
+        <json.version>20080701</json.version>                               <!-- updated -->
+	    <junit.version>4.12</junit.version>                                 <!-- updated -->
+        <log4j.version>1.2.17</log4j.version>				                <!-- updated -->
+        <selenium-java.version>3.12.0</selenium-java.version>                          <!-- updated -->
+        <jackson.version>2.9.5</jackson.version>
+        <tess4j.version>4.2.3</tess4j.version>
+        <swt.version>3.3.0-v3346</swt.version>
+  </properties>
+
+  <dependencies>
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>${selenium-java.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>com.google.android</groupId>
+		<artifactId>android</artifactId>
+		<version>${android.version}</version>
+		<scope>provided</scope>
+	</dependency>
+    <dependency>
+      <groupId>io.appium</groupId>
+      <artifactId>java-client</artifactId>
+      <version>${appium.version}</version>
+    </dependency>
+	<dependency>
+	    <groupId>commons-cli</groupId>
+	    <artifactId>commons-cli</artifactId>
+	    <version>${commons-cli.version}</version>
+	</dependency>    
+    <dependency>
+	    <groupId>commons-codec</groupId>
+	    <artifactId>commons-codec</artifactId>
+	    <version>${commons-codec.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>commons-logging</groupId>
+	    <artifactId>commons-logging</artifactId>
+	    <version>${commons-logging.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>com.google.api-client</groupId>
+	    <artifactId>google-api-client</artifactId>
+	    <version>${google-api-client.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>com.google.code.gson</groupId>
+	    <artifactId>gson</artifactId>
+	    <version>${gson.version}</version>
+	</dependency>
+	<dependency>
+    	<groupId>org.apache.httpcomponents</groupId>
+    	<artifactId>httpclient</artifactId>
+    	<version>${httpclient.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.httpcomponents</groupId>
+	    <artifactId>httpcore</artifactId>
+	    <version>${httpcore.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>com.auth0</groupId>
+	    <artifactId>java-jwt</artifactId>
+	    <version>${java-jwt.version}</version>
+	</dependency>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>${json.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>${log4j.version}</version>
+    </dependency>
+	<dependency>
+	    <groupId>log4j</groupId>
+	    <artifactId>apache-log4j-extras</artifactId>
+	    <version>${log4j.version}</version>
+	</dependency>
+    <dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-databind</artifactId>
+    	<version>${jackson.version}</version>
+  	</dependency>
+	<dependency>
+  		  <groupId>com.fasterxml.jackson.core</groupId>
+  		  <artifactId>jackson-annotations</artifactId>
+  		  <version>${jackson.version}</version>
+	</dependency>
+	<dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-core</artifactId>
+		<version>${jackson.version}</version>
+	</dependency>
+	<dependency>
+    	<groupId>net.sourceforge.tess4j</groupId>
+    	<artifactId>tess4j</artifactId>
+    	<version>${tess4j.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.eclipse</groupId>
+	    <artifactId>swt</artifactId>
+	    <version>${swt.version}</version>
+		</dependency>
+	</dependencies>
+
+
+	
+<profiles>
+   <profile>
+      <id>swt-unix</id>
+      <activation>
+         <os>
+            <family>unix</family>
+         </os>
+      </activation>
+      <properties>
+         <swt.artifactId>org.eclipse.swt.gtk.linux.x86_64</swt.artifactId>
+         <env>linux</env>
+      </properties>
+      <dependencies>
+         <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>${swt.artifactId}</artifactId>
+            <version>3.108.0</version>
+            <optional>true</optional>
+            <exclusions>
+               <exclusion>
+                  <groupId>org.eclipse.platform</groupId>
+                  <artifactId>org.eclipse.swt</artifactId>
+               </exclusion>
+            </exclusions>
+         </dependency>
+      </dependencies>
+   </profile>
+   <profile>
+      <id>swt-mac</id>
+      <activation>
+         <os>
+            <family>mac</family>
+         </os>
+      </activation>
+      <properties>
+         <swt.artifactId>org.eclipse.swt.cocoa.macosx.x86_64</swt.artifactId>
+         <env>mac</env>
+      </properties>
+      <dependencies>
+         <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>${swt.artifactId}</artifactId>
+            <version>3.108.0</version>
+            <optional>true</optional>
+            <exclusions>
+               <exclusion>
+                  <groupId>org.eclipse.platform</groupId>
+                  <artifactId>org.eclipse.swt</artifactId>
+               </exclusion>
+            </exclusions>
+         </dependency>
+      </dependencies>
+   </profile>
+   <profile>
+      <id>swt-windows</id>
+      <activation>
+         <os>
+            <family>windows</family>
+         </os>
+      </activation>
+      <properties>
+         <swt.artifactId>org.eclipse.swt.win32.win32.x86_64</swt.artifactId>
+         <env>windows</env>
+      </properties>
+      <dependencies>
+         <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>${swt.artifactId}</artifactId>
+            <version>3.108.0</version>
+            <optional>true</optional>
+            <exclusions>
+               <exclusion>
+                  <groupId>org.eclipse.platform</groupId>
+                  <artifactId>org.eclipse.swt</artifactId>
+               </exclusion>
+            </exclusions>
+         </dependency>
+      </dependencies>
+   </profile>
+</profiles>
+  
+</project>
