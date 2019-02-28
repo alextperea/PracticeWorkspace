@@ -1,6 +1,7 @@
 package com.selenium.exercise;
 
-import org.testng.Assert;import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.selenium.objectRepository.TestAppInitPage;
 import com.selenium.objectRepository.TestAppLoginPage;
