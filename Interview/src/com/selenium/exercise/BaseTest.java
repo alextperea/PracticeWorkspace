@@ -10,7 +10,7 @@ public class BaseTest {
 	
 	@BeforeMethod
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Automation\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Applications/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://testapp.galenframework.com");
